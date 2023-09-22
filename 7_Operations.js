@@ -15,7 +15,8 @@ console.log( 1 + "2" );
 console.log( "1" + "2" );
 console.log( "In three case conditions" );
 console.log( typeof("1" + 2 + 3) );
-console.log( 1 + 2 + "3" );
+console.log( "1" + 2 + 3 );
+console.log( 1 + 2 + "3" );  //in js operation done by left to right
 
 //Typescript nothing but strict js operation like same data type, === 
 
@@ -30,6 +31,7 @@ console.log( 1 + 2 + "3" );
 // 12
 // In three case conditions
 // string
+// 123
 // 33
 
 
