@@ -53,4 +53,25 @@ console.log(obj6);
 console.log(Object.keys(tinderUser2))  // find all keys return in array
 console.log(Object.values(tinderUser2)) // find all values return in array
 console.log(Object.entries(tinderUser2)) // separate key, value in array
-console.log(tinderUser2.hasOwnProperty('isLoggine'))
+console.log(tinderUser2.hasOwnProperty('isLoggine')) // check key present or not
+
+
+//Output 
+// {}
+// {}
+// { id: '123abc', name: 'new name', isLoggine: false }
+
+//  {
+//   email: 'chandanmali2111@gmail.com',
+//   name: { fullName: { firstName: 'chandan', lastName: 'Mali' } }
+// }
+
+// chandan
+
+// { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+// { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+// { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+// [ 'id', 'name', 'isLoggine' ]
+// [ '123abc', 'new name', false ]
+// [ [ 'id', '123abc' ], [ 'name', 'new name' ], [ 'isLoggine', false ] ]
+// true
