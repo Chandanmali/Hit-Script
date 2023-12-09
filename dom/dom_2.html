@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Dom Learning</title>
+</head>
+<style>
+       body {
+              background-color: black;
+              color: white;
+       }
+</style>
+
+<body>
+       <div class="parent">
+              <div class="days">Monday</div>
+              <div class="days">Tuesday</div>
+              <div class="days">Wednesday</div>
+              <div class="days">Friday</div>
+       </div>
+</body>
+<script>
+       const parent = document.querySelector('.parent');
+       console.log(parent);
+       console.log(parent.children);
+       console.log(parent.children[1]);
+       console.log(parent.children[2].innerHTML);
+
+       for (let i = 0; i < parent.children.length; i++) {
+              const element = parent.children[i].innerHTML;
+              console.log(element);
+
+       }
+       // we can access and change in values
+       parent.children[2].innerHTML = 'collingwood';
+       parent.children[2].style.color = 'pink';
+       parent.children[3].style.color = 'yellow';
+
+       //if we want first element and last element in list then
+       console.log(parent.firstElementChild);
+       console.log(parent.lastElementChild);
+
+       const day = document.querySelector('.days'); //always take or select first value
+       console.log(day);
+       day.style.color = 'green'; //first value colored
+
+       const day1 = document.querySelectorAll('.days'); //select all values in nodelist
+       console.log(day1);
+       day1[1].style.color = 'orange'; //first value colored
+    //   console.log(dayOne.nextElementSibling);
+
+       console.log("NODES: ", parent.childNodes);   //accese child to parent
+
+
+
+
+
+</script>
+
+</html>
